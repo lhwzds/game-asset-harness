@@ -13,4 +13,3 @@ test('keeps resolved files under the output root', () => {
   assert.equal(resolveInside(root, 'images', 'player'), path.join(root, 'images', 'player'))
   assert.throws(() => resolveInside(root, '..', 'outside'))
 })
-

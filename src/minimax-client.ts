@@ -126,4 +126,3 @@ export class MiniMaxClient {
     return { assetId, kind: 'music', model: this.#musicModel, files: [filename], ...(typeof body.trace_id === 'string' ? { traceId: body.trace_id } : {}) }
   }
 }
-

@@ -103,4 +103,3 @@ export function apply(ctx: Context, config: Config = {}): void {
     execute: args => client().generateMusic(args),
   }))
 }
-

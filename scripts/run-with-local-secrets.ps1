@@ -24,4 +24,3 @@ if (-not $env:MINIMAX_API_KEY) { throw 'MINIMAX_API_KEY was not found in the loc
 if (-not $env:ZAI_API_KEY) { throw 'ZAI_API_KEY was not found in the local secrets file.' }
 
 npm run dsh:web
-

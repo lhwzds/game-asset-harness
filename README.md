@@ -47,4 +47,3 @@ The generated DeepSeek Harness overlay registers:
 - `minimax_generate_game_music`
 
 DeepSeek Harness is an upstream MIT dependency. This project does not modify the upstream checkout.
-

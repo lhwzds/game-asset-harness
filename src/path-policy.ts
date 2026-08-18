@@ -19,4 +19,3 @@ export function resolveInside(root: string, ...segments: string[]): string {
   }
   return candidate
 }
-
