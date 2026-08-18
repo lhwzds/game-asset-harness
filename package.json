@@ -1,0 +1,38 @@
+{
+    "name":  "@lhwzds/game-asset-harness",
+    "version":  "0.1.0",
+    "description":  "Open-source DeepSeek Harness plugins for orchestrating game art and music generation.",
+    "type":  "module",
+    "license":  "MIT",
+    "private":  false,
+    "engines":  {
+                    "node":  "^22.19.0 || \u003e=24.0.0"
+                },
+    "scripts":  {
+                    "check":  "npm run typecheck \u0026\u0026 npm test",
+                    "typecheck":  "tsc --noEmit",
+                    "test":  "node --import tsx --test tests/*.test.ts",
+                    "overlay":  "node scripts/write-overlay.mjs",
+                    "dsh:web":  "npm run overlay \u0026\u0026 dsh web --patch ./.generated/overlay.cordis.yml",
+                    "smoke:dsh":  "npm run overlay \u0026\u0026 node scripts/smoke-dsh.mjs"
+                },
+    "dependencies":  {
+                         "@deepseek-ai/cordis":  "4.0.1",
+                         "@deepseek-ai/dsh":  "0.1.0-rc.7",
+                         "@deepseek-ai/dsh-llm-pi-ai":  "0.1.0-rc.7",
+                         "@deepseek-ai/dsh-tools":  "0.1.0-rc.7"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^24.0.0",
+                            "tsx":  "^4.22.4",
+                            "typescript":  "^6.0.0"
+                        },
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/lhwzds/game-asset-harness.git"
+                   },
+    "homepage":  "https://github.com/lhwzds/game-asset-harness#readme",
+    "bugs":  {
+                 "url":  "https://github.com/lhwzds/game-asset-harness/issues"
+             }
+}
